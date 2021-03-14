@@ -1,0 +1,220 @@
+body{
+    background-image: url(../Pictures/headPic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    font-size: 16px;
+}
+/* _______________About us page and Menu bar_______________ */
+.container{
+    margin-top: 350px;
+    text-align: center;
+}
+h3{
+    margin-bottom: 0;
+}
+nav{
+    width: 80%;
+    background: #cccccc;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 3px solid red;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: black;
+    padding-bottom: 2px;
+}
+
+/* ________The Same Style________ */
+.aboutContainer,
+.roomContainer,
+.transContainer,
+.eventsContainer{
+    width: 78%;
+    text-align: center;
+    margin: auto;
+    background: #7e7d7d2c;
+    box-shadow: 0px 0px 10px #888888;
+}
+.roomBar,
+.transBar,
+.eventsBar{
+    text-align: center;
+    background: #999999ce;
+    font-size: 24px;
+    padding: 8px;
+}
+.roomContainer img:nth-child(1),
+.transContainer img:nth-child(1),
+.eventsContainer img:nth-child(1){
+    margin-bottom: 20px;
+}
+button{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #999999de;
+    border: none;
+    outline: none;
+    box-shadow: -2px 5px 5px #888888;
+    font-size: 18px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.pic,
+.contact,
+.mediaContact{
+    display: flex;
+    justify-content: space-between;
+}
+p,
+img,
+h3{
+    cursor: pointer;
+}
+/* ______________________________________ */
+
+.welcome{
+    font-size: 32px;
+    margin: 0;
+    padding-top: 1px;
+}
+.map{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.pic{
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.pic img{
+    width: 48%;
+    height: 300px;
+    padding: 5px;
+}
+
+/* ________Footer Style______ */
+footer{
+    padding: 5px 0;
+    height: 140px;
+    border-top: 3px solid red;
+    text-align: center;
+    background: #999999ce;
+}
+.contact{
+    flex-wrap: wrap;
+    width: 45%;
+    margin: auto;
+    font-size: 18px;
+}
+.mediaContact{
+    width: 20%;
+    margin: auto;
+}
+.mediaContact a i{
+    font-size: 30px;
+    color: black;
+}
+
+/* __________Responsive_________ */
+@media(max-width: 768px) {
+    body{
+        background-size: 100% 250px;
+        font-size: 12px;
+    }
+    .container{
+        margin: 220px 0 0 0;
+    }
+    nav{
+        width: 95%;
+        height: 30px;
+    }
+    nav ul{
+        padding: 0;
+    }
+    a,
+    nav ul li a{
+        font-size: 12px;
+    }
+    .pic img{
+        height: 230px;
+        width: 98%;
+    }
+    .roomContainer img:nth-child(1),
+    .transContainer img:nth-child(1),
+    .eventsContainer img:nth-child(1){
+        margin-bottom: 0px;
+    }
+    button{
+        width: 80%;
+        height: 30px;
+    }
+    .roomBar,
+    .transBar,
+    .eventsBar,
+    .welcome,
+    .map{
+        font-size: 15px;
+        padding: 1px;
+    }
+    footer{
+        padding: 10px 0;
+    }
+    .contact p{
+        width: 100%;
+        margin: 5px;
+    }
+    .mediaContact{
+        width: 45%;
+    }
+    .mediaContact a i{
+        font-size: 20px;
+    }
+} 
+@media(max-width: 992px) {
+    nav a{
+        font-size: 16px;
+    }
+    .pic img{
+        height: 230px;
+    }
+    button{
+        width: 50%;
+    }
+    footer{
+        padding: 10px 0;
+    }
+    .contact p{
+        width: 100%;
+        margin: 5px;
+    }
+    .mediaContact a i{
+        font-size: 20px;
+    }
+}
+@media(max-width: 1150px) {
+    .contact{
+        width: 55%;
+    }
+}
